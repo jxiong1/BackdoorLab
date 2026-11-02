@@ -1,3 +1,27 @@
+> ⚠️ **Academic Disclaimer & Course Submission Notice**  
+> **Course:** [ECE 491E]  
+> **Institution:** [Univerisity of Hawaii at Manoa]  
+> **Assignment:** [Lab 3]  
+> 
+> **Attribution:** This repository is a fork/copy based on the open-source project [BackdoorBox](https://github.com/THUYimingLi/BackdoorBox) developed by Yiming Li et al. It has been used as a base codebase for educational purposes to fulfill the requirements of this course assignment. All original framework code remains copyrighted by the original authors.
+> 
+> ### 📝 Student Contributions for Assignment
+> The following code modifications and custom scripts were developed specifically for this assignment submission:
+> 
+> * **Modified Core Attack Pipelines:**
+>   * `Attack_BadNets.py` — Updated core training pipeline and model handling (invoked by `BadNets_Example.py`).
+>   * `Attack_Blended.py` — Updated core training pipeline and model handling (invoked by `Blended_Example.py`).
+> 
+> * **Added Attack Implementations & Experiments:**
+>   * `Attack_LabelConsistent.py` & `LabelConsistent_Example.py` — Core implementation and execution pipeline for the Label-Consistent attack.
+>   * `BadNets_Example.py` — Execution script evaluating BadNets attacks.
+>   * `Blended_Example.py` — Execution script for evaluating Blended attacks.
+> 
+> * **Added Defense Implementations & Experiments:**
+>   * `Defense_Finetuning.py` & `Finetuning_Example.py` — Core implementation and evaluation pipeline for FineTuning model repair.
+>   * `Defense_Pruning.py` & `Pruning_Example.py` — Core implementation and evaluation pipeline for Pruning model repair.
+
+
 # BackdoorBox: An Open-sourced Python Toolbox for Backdoor Attacks and Defenses
 ![Python 3.8](https://img.shields.io/badge/python-3.8-DodgerBlue.svg?style=plastic)
 ![Pytorch 1.8.0](https://img.shields.io/badge/pytorch-1.8.0-DodgerBlue.svg?style=plastic)

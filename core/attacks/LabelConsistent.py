@@ -435,7 +435,7 @@ class CreatePoisonedTargetDataset(DatasetFolder):
         if len(sample.shape) == 2:
             sample = sample.reshape((sample.shape[0], sample.shape[1], 1))
         
-        img_index = int(path.split('/')[-1].split('.')[0])
+        img_index = int(path.replace('\\', '/').split('/')[-1].split('.')[0])
         if img_index in self.poisoned_set:
             sample = self.poisoned_transform(sample) # add trigger to image
         else:

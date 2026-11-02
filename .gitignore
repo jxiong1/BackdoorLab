@@ -20,6 +20,11 @@ mytest/
 ./test2.py
 ./result
 ./experiments
-
+*.png
+cifar-10-python.tar
+/venv
+/temp_Extracted_cifar
+pruning_log.txt
+/defense_log.txt
 # macOS
 .DS_Store

@@ -126,6 +126,7 @@ class Base(object):
             self.current_schedule = deepcopy(schedule)
 
         work_dir = osp.join(self.current_schedule['save_dir'], self.current_schedule['experiment_name'] + '_' + time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime()))
+        work_dir = work_dir.replace(":", "-")
         os.makedirs(work_dir, exist_ok=True)
         log = Log(osp.join(work_dir, 'log.txt'))
 
@@ -337,6 +338,7 @@ class Base(object):
             poisoned_test_dataset = self.poisoned_test_dataset
 
         work_dir = osp.join(self.current_schedule['save_dir'], self.current_schedule['experiment_name'] + '_' + time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime()))
+        work_dir = work_dir.replace(":", "-")
         os.makedirs(work_dir, exist_ok=True)
         log = Log(osp.join(work_dir, 'log.txt'))
 
